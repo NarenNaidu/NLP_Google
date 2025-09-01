@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandma's Famous Banana Bread - Parsed Recipe</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .panel {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #666;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        .meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .description {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .ingredient {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 8px;
+            padding: 8px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .quantity {
+            font-weight: bold;
+            color: #2196F3;
+            min-width: 50px;
+        }
+        .unit {
+            color: #666;
+            min-width: 50px;
+        }
+        .name {
+            flex: 1;
+        }
+        .instruction {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .instruction::before {
+            content: counter(step);
+            counter-increment: step;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #2196F3;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .instructions {
+            counter-reset: step;
+        }
+        .original-text {
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #444;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <h1>Grandma's Famous Banana Bread</h1>
+            
+            <div class="meta">
+                <div class="meta-item">⏱️ Prep: 15 min</div>
+                <div class="meta-item">🔥 Cook: 60-65 min</div>
+                <div class="meta-item">🍽️ Servings: 1 loaf (about 10 slices)</div>
+            </div>
+            
+            <p class="description">Every Sunday morning, my grandmother would make this incredible banana bread. The whole house would fill with the most amazing aroma! Now I'm sharing her secret recipe with you. The key is using really ripe bananas - the blacker the better! This recipe has been in our family for generations, and it never fails to bring smiles to everyone's faces. It's moist, flavorful, and perfect with your morning coffee or as an afternoon snack.</p>
+            
+            <h2>Ingredients</h2>
+            <div class="ingredients">
+
+                <div class="ingredient">
+                    <span class="quantity">3.0</span>
+                    <span class="unit"></span>
+                    <span class="name">very ripe bananas (about 1 1/2 cups mashed)</span>
+                </div>
+
+                <div class="ingredient">
+                    <span class="quantity">0.33</span>
+                    <span class="unit">cup</span>
+                    <span class="name">melted butter</span>
+                </div>
+
+                <div class="ingredient">
+                    <span class="quantity">0.75</span>
+                    <span class="unit">cup</span>
+                    <span class="name">sugar</span>
+                </div>
+
+                <div class="ingredient">
+                    <span class="quantity">1.0</span>
+                    <span class="unit"></span>
+                    <span class="name">egg, beaten</span>
+                </div>
+
+                <div class="ingredient">
+                    <span class="quantity">1.0</span>
+                    <span class="unit">teaspoon</span>
+                    <span class="name">vanilla extract</span>
+                </div>
+
+                <div class="ingredient">
+                    <span class="quantity">1.0</span>
+                    <span class="unit">teaspoon</span>
+                    <span class="name">baking soda</span>
+                </div>
+
+                <div class="ingredient">
+                    <span class="quantity"></span>
+                    <span class="unit">Pinch</span>
+                    <span class="name">salt</span>
+                </div>
+
+                <div class="ingredient">
+                    <span class="quantity">1.5</span>
+                    <span class="unit">cups</span>
+                    <span class="name">all-purpose flour</span>
+                </div>
+
+                <div class="ingredient">
+                    <span class="quantity">0.5</span>
+                    <span class="unit">teaspoon</span>
+                    <span class="name">cinnamon</span>
+                </div>
+
+                <div class="ingredient">
+                    <span class="quantity">2.0</span>
+                    <span class="unit">tablespoons</span>
+                    <span class="name">brown sugar</span>
+                </div>
+
+                <div class="ingredient">
+                    <span class="quantity">0.5</span>
+                    <span class="unit">teaspoon</span>
+                    <span class="name">cinnamon</span>
+                </div>
+
+            </div>
+            
+            <h2>Instructions</h2>
+            <div class="instructions">
+
+            </div>
+        </div>
+        
+        <div class="panel">
+            <h2>Original Recipe Text</h2>
+            <div class="original-text">Grandma's Famous Banana Bread
+
+Every Sunday morning, my grandmother would make this incredible banana bread. The whole house would fill with the most amazing aroma! Now I'm sharing her secret recipe with you. The key is using really ripe bananas - the blacker the better!
+
+This recipe has been in our family for generations, and it never fails to bring smiles to everyone's faces. It's moist, flavorful, and perfect with your morning coffee or as an afternoon snack.
+
+Preparation: 15 min
+Baking: 60-65 min
+Makes: 1 loaf (about 10 slices)
+
+Ingredients List:
+
+For the bread:
+* 3 very ripe bananas (about 1 1/2 cups mashed)
+* 1/3 cup melted butter
+* 3/4 cup sugar (you can reduce to 1/2 cup if you prefer less sweet)
+* 1 egg, beaten
+* 1 teaspoon vanilla extract
+* 1 teaspoon baking soda
+* Pinch of salt
+* 1 1/2 cups all-purpose flour
+* 1/2 teaspoon cinnamon (optional but recommended)
+
+For the topping (optional):
+* 2 tablespoons brown sugar
+* 1/2 teaspoon cinnamon
+
+Baking Instructions:
+
+Step 1: Preheat your oven to 350°F (175°C). Grease a 4x8 inch loaf pan with butter or cooking spray.
+
+Step 2: In a large mixing bowl, mash the bananas with a fork until smooth. A few small lumps are okay - they add texture!
+
+Step 3: Stir the melted butter into the mashed bananas.
+
+Step 4: Mix in the sugar, beaten egg, and vanilla extract until well combined.
+
+Step 5: Sprinkle the baking soda and salt over the mixture and stir in.
+
+Step 6: Add the flour and cinnamon, stirring until just incorporated. Don't overmix - a few streaks of flour are fine.
+
+Step 7: Pour the batter into your prepared loaf pan. If using the topping, mix the brown sugar and cinnamon together and sprinkle over the top.
+
+Step 8: Bake for 60-65 minutes, or until a toothpick inserted into the center comes out clean or with just a few moist crumbs.
+
+Step 9: Remove from oven and let cool in the pan for 10 minutes before turning out onto a wire rack.
+
+Step 10: Slice and enjoy warm with butter, or store in an airtight container for up to 4 days.
+
+Variations: Add 1/2 cup chocolate chips or chopped walnuts to the batter for extra flavor!</div>
+        </div>
+    </div>
+</body>
+</html>

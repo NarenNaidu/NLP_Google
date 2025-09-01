@@ -1,0 +1,65 @@
+{
+  "title": "Grandma's Famous Banana Bread",
+  "description": "Every Sunday morning, my grandmother would make this incredible banana bread. The whole house would fill with the most amazing aroma! Now I'm sharing her secret recipe with you. The key is using really ripe bananas - the blacker the better! This recipe has been in our family for generations, and it never fails to bring smiles to everyone's faces. It's moist, flavorful, and perfect with your morning coffee or as an afternoon snack.",
+  "prep_time": "15 min",
+  "cook_time": "60-65 min",
+  "servings": "1 loaf (about 10 slices)",
+  "ingredients": [
+    {
+      "name": "very ripe bananas (about 1 1/2 cups mashed)",
+      "quantity": 3.0,
+      "unit": ""
+    },
+    {
+      "name": "melted butter",
+      "quantity": 0.33,
+      "unit": "cup"
+    },
+    {
+      "name": "sugar",
+      "quantity": 0.75,
+      "unit": "cup"
+    },
+    {
+      "name": "egg, beaten",
+      "quantity": 1.0,
+      "unit": ""
+    },
+    {
+      "name": "vanilla extract",
+      "quantity": 1.0,
+      "unit": "teaspoon"
+    },
+    {
+      "name": "baking soda",
+      "quantity": 1.0,
+      "unit": "teaspoon"
+    },
+    {
+      "name": "salt",
+      "quantity": null,
+      "unit": "Pinch"
+    },
+    {
+      "name": "all-purpose flour",
+      "quantity": 1.5,
+      "unit": "cups"
+    },
+    {
+      "name": "cinnamon",
+      "quantity": 0.5,
+      "unit": "teaspoon"
+    },
+    {
+      "name": "brown sugar",
+      "quantity": 2.0,
+      "unit": "tablespoons"
+    },
+    {
+      "name": "cinnamon",
+      "quantity": 0.5,
+      "unit": "teaspoon"
+    }
+  ],
+  "instructions": []
+}
